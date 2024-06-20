@@ -63,13 +63,13 @@ export MAX_NUM_STEPS=30000
 export NUM_EPOCHS=0
 
 # A convenient prefix for all of your training paths.
-export BASE_DIR="/MyDrive/Loras/datasets"
+export BASE_DIR="/MyDrive/Loras/detective_pikachu_style"
 export DATALOADER_CONFIG="${BASE_DIR}/multidatabackend.json"
 export OUTPUT_DIR="${BASE_DIR}/models"
 # Set this to "true" to push your model to Hugging Face Hub.
 export PUSH_TO_HUB="false"
 # If PUSH_TO_HUB and PUSH_CHECKPOINTS are both enabled, every saved checkpoint will be pushed to Hugging Face Hub.
-export PUSH_CHECKPOINTS="true"
+export PUSH_CHECKPOINTS="false"
 # This will be the model name for your final hub upload, eg. "yourusername/yourmodelname"
 # It defaults to the wandb project name, but you can override this here.
 export HUB_MODEL_NAME=$TRACKER_PROJECT_NAME
