@@ -156,7 +156,7 @@ export ALLOW_TF32=true
 # AdamW 8Bit is a robust and lightweight choice. Adafactor might reduce memory consumption, and Dadaptation is slow and experimental.
 # AdamW is the default optimizer, but it uses a lot of memory and is slower than AdamW8Bit or Adafactor.
 # Choices: adamw, adamw8bit, adafactor, dadaptation
-export OPTIMIZER="adamw8bit"
+export OPTIMIZER="adamw16bit"
 
 
 # EMA is a strong regularisation method that uses a lot of extra VRAM to hold two copies of the weights.
