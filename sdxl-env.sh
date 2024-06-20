@@ -76,7 +76,7 @@ export HUB_MODEL_NAME=$TRACKER_PROJECT_NAME
 
 # By default, images will be resized so their SMALLER EDGE is 1024 pixels, maintaining aspect ratio.
 # Setting this value to 768px might result in more reasonable training data sizes for SDXL.
-export RESOLUTION=1024
+export RESOLUTION=768
 # If you want to have the training data resized by pixel area (Megapixels) rather than edge length,
 #  set this value to "area" instead of "pixel", and uncomment the next RESOLUTION declaration.
 export RESOLUTION_TYPE="pixel"
