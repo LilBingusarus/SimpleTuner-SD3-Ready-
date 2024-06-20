@@ -156,7 +156,7 @@ export ALLOW_TF32=true
 # AdamW 8Bit is a robust and lightweight choice. Adafactor might reduce memory consumption, and Dadaptation is slow and experimental.
 # AdamW is the default optimizer, but it uses a lot of memory and is slower than AdamW8Bit or Adafactor.
 # Choices: adamw, adamw8bit, adafactor, dadaptation
-export OPTIMIZER="adamw16bit"
+export OPTIMIZER="adamw_bf16"
 
 
 # EMA is a strong regularisation method that uses a lot of extra VRAM to hold two copies of the weights.
@@ -195,7 +195,7 @@ export TRAINER_EXTRA_ARGS=""
 export TRAINING_SEED=42
 
 # Mixed precision is the best. You honestly might need to YOLO it in fp16 mode for Google Colab type setups.
-export MIXED_PRECISION="fp16"                # Might not be supported on all GPUs. fp32 will be needed for others.
+export MIXED_PRECISION="bf16"                # Might not be supported on all GPUs. fp32 will be needed for others.
 export PURE_BF16=true
 
 # This has to be changed if you're training with multiple GPUs.
