@@ -41,7 +41,7 @@ export RESUME_CHECKPOINT="latest"
 # For the default settings with 10 gradient accumulations, more frequent checkpoints might be preferable at first.
 export CHECKPOINTING_STEPS=150
 # This is how many checkpoints we will keep. Two is safe, but three is safer.
-export CHECKPOINTING_LIMIT=2
+export CHECKPOINTING_LIMIT=3
 
 # This is decided as a relatively conservative 'constant' learning rate.
 # Adjust higher or lower depending on how burnt your model becomes.
