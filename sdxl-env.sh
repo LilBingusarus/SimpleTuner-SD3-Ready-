@@ -63,7 +63,7 @@ export MAX_NUM_STEPS=30000
 export NUM_EPOCHS=0
 
 # A convenient prefix for all of your training paths.
-export BASE_DIR="/MyDrive/notebooks/datasets"
+export BASE_DIR="/MyDrive/Loras/datasets"
 export DATALOADER_CONFIG="${BASE_DIR}/multidatabackend.json"
 export OUTPUT_DIR="${BASE_DIR}/models"
 # Set this to "true" to push your model to Hugging Face Hub.
