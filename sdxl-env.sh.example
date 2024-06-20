@@ -7,7 +7,7 @@ export MODEL_TYPE='lora'
 
 # Set this to 'true' if you are training a Stable Diffusion 3 checkpoint.
 # Use MODEL_NAME="stabilityai/stable-diffusion-3-medium-diffusers"
-export STABLE_DIFFUSION_3=false
+export STABLE_DIFFUSION_3=true
 # Similarly, this is to train PixArt Sigma (1K or 2K) models.
 # Use MODEL_NAME="PixArt-alpha/PixArt-Sigma-XL-2-1024-MS"
 export PIXART_SIGMA=false
