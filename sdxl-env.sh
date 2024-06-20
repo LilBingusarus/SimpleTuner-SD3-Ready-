@@ -92,7 +92,7 @@ export MINIMUM_RESOLUTION=$RESOLUTION
 # This has not been tested in SDXL.
 #export INSTANCE_PROMPT="lotr style "
 # If you also supply a user prompt library or `--use_prompt_library`, this will be added to those lists.
-export VALIDATION_PROMPT="ethnographic photography of teddy bear at a picnic"
+export VALIDATION_PROMPT="a photograph of a mewtwo sitting under a tree"
 export VALIDATION_GUIDANCE=7.5
 # You'll want to set this to 0.7 if you are training a terminal SNR model.
 export VALIDATION_GUIDANCE_RESCALE=0.0
@@ -156,7 +156,7 @@ export ALLOW_TF32=true
 # AdamW 8Bit is a robust and lightweight choice. Adafactor might reduce memory consumption, and Dadaptation is slow and experimental.
 # AdamW is the default optimizer, but it uses a lot of memory and is slower than AdamW8Bit or Adafactor.
 # Choices: adamw, adamw8bit, adafactor, dadaptation
-export OPTIMIZER="adamw_bf16"
+export OPTIMIZER="adamw8bit"
 
 
 # EMA is a strong regularisation method that uses a lot of extra VRAM to hold two copies of the weights.
